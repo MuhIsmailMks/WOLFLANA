@@ -1806,6 +1806,7 @@ picture{
     border-top: 2px solid #23364b
 }
 
+
 @media screen and (max-width: 1023.98px) {
     .footer__bottom {
         -webkit-box-orient:vertical;
@@ -1886,4 +1887,11 @@ picture{
 
 .footer__nav a:last-child {
     border: none
+}
+
+@media screen and (max-width: 500px) {
+    .faq__col{
+        width:100% !important;
+        min-width:80%;
+    }
 }
