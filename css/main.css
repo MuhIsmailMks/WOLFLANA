@@ -25,6 +25,15 @@ ol,ul {
     list-style: none
 }
 
+
+@font-face {
+    font-family: "Talk Comic";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Talk-Comic.ttf) format(truetype)
+}
+
+
 blockquote,q {
     quotes: none
 }
@@ -37,13 +46,6 @@ blockquote:after,blockquote:before,q:after,q:before {
 table {
     border-collapse: collapse;
     border-spacing: 0
-}
-
-@font-face {
-    font-family: "Talk Comic";
-    font-style: normal;
-    font-weight: 400;
-    src: url(./fonts/Talk-Comic.ttf) format(truetype)
 }
 
 *,::after,::before {
