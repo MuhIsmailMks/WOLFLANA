@@ -8,22 +8,33 @@
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimum-scale=1"
     />
     <title>$SCRAT</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="shortcut icon" href="img/logo.svg" type="image/svg" />
   </head>
   <body>
     <div class="wrapper">
-      <picture
+      <img 
+      class=" bg_ice"
+      src="./img/background.png"
+      alt=""
+      type="image/png"
+  />
+
+  
+  <!-- bg ice -->
+      <!-- <picture
         ><source
           class="background layer-0"
           srcset="/img/background.webp"
           type="image/webp" />
-        <img
-          class="background layer-0"
-          src="img/background.png"
+        <img 
+          class=" bg_ice"
+          src="./img/background.png"
           alt=""
           type="image/png"
-      /></picture>
+      /></picture> -->
+
+
       <header class="header layer-5">
         <div class="header__container container">
           <div class="header__logo logo">
@@ -42,9 +53,10 @@
           >
         </div>
       </header>
+
       <section id="home" class="hero">
         <div class="hero__container container layer-1">
-          <canvas class="hero__scrat layer-1"></canvas
+          <canvas id="myCanvas" class="layer-1"></canvas
           ><img class="hero__pit layer-0" src="img/pit.svg" alt="" />
           <div class="hero__col layer-2">
             <div class="hero__title">
@@ -83,7 +95,13 @@
           </div>
         </div>
       </section>
+      
       <div class="water">
+        <img
+            class="water__background layer-1"
+            src="img/water.png"
+            alt=""
+            type="image/png" />
         <picture
           ><source
             class="water__background layer-1"
@@ -603,6 +621,8 @@
         </footer>
       </div>
     </div>
+
+    <script src="./js/script.js"></script>
     <script src="./js/main.js"></script>
     <script src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/js.js"></script>
   </body>
