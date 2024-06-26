@@ -184,7 +184,7 @@ picture{
 
 @media screen and (max-width: 1600px) {
     .water__background {
-        top:0
+        top:-100px;
     }
 }
 
