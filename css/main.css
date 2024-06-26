@@ -21,7 +21,7 @@ ol,ul {
     font-family: "Talk Comic";
     font-style: normal;
     font-weight: 400;
-    src: url(./fonts/Talk-Comic.ttf) format(truetype)
+    src: url(/fonts/Talk-Comic.ttf) format(truetype)
 }
 
 
