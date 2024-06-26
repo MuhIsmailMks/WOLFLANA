@@ -11,15 +11,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block
 }
 
-body {
-    line-height: 1;
-    font-family: "Talk Comic";
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    background: #0c1928;
-    color: #fff
-}
 
 ol,ul {
     list-style: none
@@ -57,6 +48,17 @@ button {
     font-family: inherit;
     cursor: pointer
 }
+
+body {
+    line-height: 1;
+    font-family: "Talk Comic";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    background: #0c1928;
+    color: #fff
+}
+
 
 a {
     text-decoration: none;
