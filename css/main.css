@@ -576,6 +576,7 @@ picture{
     width: 100%;
     margin-left: auto;
     padding: 100px 0; 
+    gap:1rem;
     min-height: 42vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1982,7 +1983,7 @@ picture{
       }
 
       .about_progess p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: black;
       }
 
@@ -2007,7 +2008,7 @@ picture{
         color: black;
         position: absolute;
 
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .progess_image span{
@@ -2015,11 +2016,51 @@ picture{
         position: absolute;
         right: 20%;
 
-        font-size: 1.25rem;
+        font-size: .9rem;
       }
 
 
+/* footer */
 
+/* footer */
+footer{
+    background: linear-gradient(180deg, #a77d44 22%, rgba(255, 255, 255, 1) 100%);
+  }
+   
+  .text_about_footer,
+  footer .link h3,
+  footer .link a{
+    text-shadow: .3px .5px 0 white;
+    font-weight: 600;
+    transition: .2s;
+  }
+  
+  footer .link a:hover{
+    color: white;
+  }
+  
+  footer .social a:hover{
+    scale: 1.1;
+  }
+  
+  .faq_text{
+    height: 0;
+  }
+  
+  .faq.active{
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .faq.active .faq_text{
+    height: auto;
+  }
+  
+  .faq.active .icon{
+    rotate: 180deg; 
+  }
+
+  
   
 @media screen and (max-width: 580px) { 
     /* hero */
@@ -2031,6 +2072,10 @@ picture{
         height:100px;
     }
 
+    .hero__btn .content p:not(.buy_btn p){
+        font-size:1.85rem;
+    }
+
 
     /* progess */
     .hero__col { 
@@ -2038,19 +2083,19 @@ picture{
     }
 
     .about_progess p{
-        font-size: 1.2rem; 
+        font-size: 1rem; 
     }
 
     .about_progess{
-        width: 100%; 
+        width: 90%; 
       }
 
     .progess_image p{ 
-        font-size: 1.5rem;
+        font-size: 1.15rem;
       }
     
     .progess_image span{ 
-        font-size: 1rem;
+        font-size: .75rem;
         right:13%;
       }
 

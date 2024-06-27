@@ -1,20 +1,66 @@
-// // Tunggu sampai halaman selesai dimuat
-// window.onload = function() {
-//     // Dapatkan elemen canvas dan gambar
-//     var canvas = document.getElementById('myCanvas');
-//     var ctx = canvas.getContext('2d');
-//     var img = document.getElementById('sourceImage');
+// aos
+// AOS.init({
+//     once: true
+// })
 
-//     // Gambar gambar ke canvas ketika gambar sudah siap
-//     img.onload = function() {
-//         // Atur ukuran canvas agar sesuai dengan gambar
-//         canvas.width = img.width;
-//         canvas.height = img.height;
-        
-//         // Gambar gambar pada canvas
-//         ctx.drawImage(img, 0, 0);
-//     };
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".section_links");
+    const navLinks = document.querySelectorAll(".menu-list a");
 
-//     // Ubah src untuk memicu onload jika gambar sudah dimuat sebelumnya
-//     img.src = img.src;
-// };
+    window.addEventListener("scroll", () => {
+        let current = ""; 
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (pageYOffset >= sectionTop - sectionHeight / 5) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").substring(1) === current) {
+                link.classList.add("active");
+            }
+        });
+    });
+});
+
+// copy address
+const copybtns = document.querySelectorAll(".copy_address");
+
+copybtns.forEach(copybtn => {
+    
+copybtn.addEventListener("click", function () {
+    let parent = copybtn.parentElement;
+    let textSpan = parent.querySelector('span'); 
+    let icon = parent.querySelector('.icon'); 
+    let intervalId;
+    let addressText = parent.querySelector(".value").getAttribute('data-set');
+    textSpan.innerHTML = 'Copied';
+
+    icon.classList.add('active') 
+    icon.innerHTML = `
+     <i class="bi bi-clipboard-check text-white"></i>
+    ` 
+
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
+ 
+
+    navigator.clipboard.writeText(addressText);
+});
+})
+
+//    faq
+const faq_btns = document.querySelectorAll('.faq_btn');
+faq_btns.forEach(faq_btn => {
+    faq_btn.addEventListener('click',() => {
+        const faq = faq_btn.parentElement
+        faq.classList.toggle('active')
+    })
+})
