@@ -623,7 +623,7 @@ picture{
 }
 
 .text_hero_main{
-    -webkit-text-stroke:2px black;
+    -webkit-text-stroke:4px black;
 }
 
 @media screen and (max-width: 640px) {
