@@ -7,6 +7,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     vertical-align: baseline
 }
 
+html{
+    scroll-behavior: smooth;
+  }
+
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block
 }
