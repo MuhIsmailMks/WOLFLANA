@@ -52,3 +52,26 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     });
 });
+
+
+// faq
+// Pilih semua elemen dengan kelas "accordion"
+var accordions = document.querySelectorAll(".accordion");
+
+// Iterasi setiap elemen "accordion"
+for (var i = 0; i < accordions.length; i++) {
+    var accordion = accordions[i];
+
+    // Pilih elemen dengan kelas "accordion__header" dan "accordion__body"
+    var header = accordion.querySelector(".accordion__header");
+    var body = accordion.querySelector(".accordion__body");
+
+    // Dapatkan tinggi dari elemen "accordion__body"
+    var bodyHeight = body.scrollHeight;
+ 
+    accordion.style.setProperty("--body-height", bodyHeight + "px");
+ 
+    header.addEventListener("click", function(e) {
+        this.parentElement.classList.toggle("accordion_open");
+    });
+}
