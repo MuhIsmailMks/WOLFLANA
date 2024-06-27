@@ -29,38 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// copy address
-const copybtns = document.querySelectorAll(".copy_address");
+  // Script JavaScript di sini
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('copy-btn');
+    var text = document.getElementById('copy-text');
+    var btnText = btn.textContent;
+    var timeout;
 
-copybtns.forEach(copybtn => {
-    
-copybtn.addEventListener("click", function () {
-    let parent = copybtn.parentElement;
-    let textSpan = parent.querySelector('span'); 
-    let icon = parent.querySelector('.icon'); 
-    let intervalId;
-    let addressText = parent.querySelector(".value").getAttribute('data-set');
-    textSpan.innerHTML = 'Copied';
-
-    icon.classList.add('active') 
-    icon.innerHTML = `
-     <i class="bi bi-clipboard-check text-white"></i>
-    ` 
-
-    if (intervalId) {
-        clearInterval(intervalId);
-    }
- 
-
-    navigator.clipboard.writeText(addressText);
+    btn.addEventListener('click', function () {
+        navigator.clipboard.writeText(text.textContent)
+            .then(function () {
+                btn.textContent = 'Copied';
+                
+                clearTimeout(timeout);
+                timeout = setTimeout(function () {
+                    btn.textContent = btnText;
+                }, 3000);
+            })
+            .catch(function (err) {
+                console.error('Failed to copy text: ', err);
+            });
+    });
 });
-})
-
-//    faq
-const faq_btns = document.querySelectorAll('.faq_btn');
-faq_btns.forEach(faq_btn => {
-    faq_btn.addEventListener('click',() => {
-        const faq = faq_btn.parentElement
-        faq.classList.toggle('active')
-    })
-})

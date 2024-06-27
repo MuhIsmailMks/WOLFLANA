@@ -2585,6 +2585,7 @@
         ))
     }
     )),
+    
     document.querySelectorAll(".contract").forEach((t=>{
         const e = t.querySelector(".contract__value")?.textContent.trim()
           , r = t.querySelector(".contract__btn");
