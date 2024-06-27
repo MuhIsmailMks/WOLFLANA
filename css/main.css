@@ -1354,11 +1354,10 @@ picture{
 }
 
 .faq {
-    position: relative;
+    position: relative; 
     background: #866d53;
-    padding: 50px 0;
-    margin: 50px 0
 }
+ 
 
 .faq__top {
     position: absolute;
@@ -1564,7 +1563,7 @@ picture{
 .community {
     padding: 160px 0 80px;
     margin: -80px 0 0;
-    background: #437cbf
+    /* background: #437cbf */
 }
 
 .community__container {
@@ -1682,7 +1681,7 @@ picture{
 }
 
 .footer {
-    background: #fff;
+    /* background: #fff; */
     color: #354a63
 }
 
@@ -2018,48 +2017,12 @@ picture{
 
         font-size: .9rem;
       }
+ 
 
-
-/* footer */
-
-/* footer */
-footer{
-    background: linear-gradient(180deg, #a77d44 22%, rgba(255, 255, 255, 1) 100%);
-  }
-   
-  .text_about_footer,
-  footer .link h3,
-  footer .link a{
-    text-shadow: .3px .5px 0 white;
-    font-weight: 600;
-    transition: .2s;
-  }
-  
-  footer .link a:hover{
-    color: white;
-  }
-  
-  footer .social a:hover{
-    scale: 1.1;
-  }
-  
-  .faq_text{
-    height: 0;
-  }
-  
-  .faq.active{
-    height: auto;
-    padding-bottom: 1rem;
-  }
-  
-  .faq.active .faq_text{
-    height: auto;
-  }
-  
-  .faq.active .icon{
-    rotate: 180deg; 
-  }
-
+      /* footer */
+      .footer_bg{
+        
+      }
   
   
 @media screen and (max-width: 580px) { 
