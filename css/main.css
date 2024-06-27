@@ -2090,7 +2090,7 @@ picture{
 @media screen and (max-width: 580px) { 
     /* hero */
     .text_hero_main{
-        font-size:50px;
+        font-size:56px;
       text-shadow: 0px 10px  0px #1A2E36;
     }
 
