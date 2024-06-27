@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Script JavaScript di sini
   document.addEventListener('DOMContentLoaded', function () {
     var btn = document.getElementById('copy-btn');
+    var btnSpan = document.querySelector('#copy-btn span');
     var text = document.getElementById('copy-text');
     var btnText = btn.textContent;
     var timeout;
@@ -39,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.addEventListener('click', function () {
         navigator.clipboard.writeText(text.textContent)
             .then(function () {
-                btn.textContent = 'Copied';
+                btnSpan.textContent = 'Copied';
                 
                 clearTimeout(timeout);
                 timeout = setTimeout(function () {
-                    btn.textContent = btnText;
-                }, 3000);
+                    btnSpan.textContent = btnText;
+                }, 1000);
             })
             .catch(function (err) {
                 console.error('Failed to copy text: ', err);
