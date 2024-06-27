@@ -1684,9 +1684,11 @@ picture{
     transform: scale(.975)
 }
 
-.footer {
+.footer ,
+.footer span,
+.footer p{
     /* background: #fff; */
-    color: #354a63
+    color: white;
 }
 
 .footer__top {
@@ -2116,4 +2118,8 @@ picture{
         right:13%;
       }
 
+      /* footer */
+      .footer{
+        height:1000px;
+      }
 }
