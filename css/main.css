@@ -2138,3 +2138,31 @@ picture{
         height:1000px;
       }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+.float_animation{
+    animation: float 2s ease-in-out infinite;
+  }
+  /* float */
+  @keyframes float {
+    0% {
+      transform: translatey(0%);
+    }
+    50% { 
+      transform: translatey(-10%);
+    }
+    100% {
+      transform: translatey(0%);
+    }
+}
+    
