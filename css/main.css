@@ -18,10 +18,10 @@ ol,ul {
 
 
 @font-face {
-    font-family: "Talk Comic";
+    font-family: "talk_comic";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Talk-Comic.ttf) format(truetype)
+    src: url('../fonts/Talk_Comic.ttf') format(truetype)
 }
 
 
@@ -49,9 +49,28 @@ button {
     cursor: pointer
 }
 
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
     line-height: 1;
-    font-family: "Talk Comic";
+    font-family: "talk_comic", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -556,7 +575,7 @@ picture{
     max-width: 620px;
     width: 100%;
     margin-left: auto;
-    padding: 200px 0;
+    padding: 100px 0; 
     min-height: 42vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -645,7 +664,7 @@ picture{
     }
 }
 
-.hero__socials {
+.hero__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -654,38 +673,9 @@ picture{
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    gap: 12px
+    justify-content: center; 
 }
-
-.hero__social {
-    width: 64px;
-    height: 64px;
-    -webkit-transition: -webkit-transform .1s ease-in-out;
-    transition: transform .1s ease-in-out;
-    transition: transform .1s ease-in-out,-webkit-transform .1s ease-in-out
-}
-
-.hero__social img {
-    display: block;
-    width: 100%;
-    height: 100%
-}
-
-.hero__social:hover {
-    -webkit-transform: scale(1.025);
-    -ms-transform: scale(1.025);
-    transform: scale(1.025)
-}
-
-.hero__social:active {
-    -webkit-transition: -webkit-transform 20ms ease-in-out;
-    transition: transform 20ms ease-in-out;
-    transition: transform 20ms ease-in-out,-webkit-transform 20ms ease-in-out;
-    -webkit-transform: scale(.975);
-    -ms-transform: scale(.975);
-    transform: scale(.975)
-}
+ 
 
 @-webkit-keyframes rotate {
     0% {
@@ -1898,4 +1888,170 @@ picture{
         width:100% !important;
         min-width:80%;
     }
+}
+
+
+
+
+
+
+/* new feature */
+
+/* hero */
+.hero__btn {
+    width: auto;
+    max-width: 90%;
+    height: 110px;
+    position: relative;
+  
+    margin: 0 auto;
+
+    cursor: pointer;
+    transition: .1s ease-in;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none ;
+    cursor: pointer;
+  }
+
+  .hero__btn:hover{
+    transform: scale(1.02);
+  }
+
+  .hero__btn .content{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__btn .bg_btn{
+    position: relative;
+    height: 100%;
+    width: auto;
+
+    object-fit: cover;
+  }
+
+  .hero__btn .content{
+    height: 100%;
+    width: 100%;
+    padding: 0 1.75rem;
+    color: black;
+  }
+
+  .hero__btn .buy_btn{
+    position: relative;
+  }
+
+  .hero__btn .buy_btn img{
+    position: relative;
+  }
+
+  .buy_btn p{
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+
+    padding-bottom: 1rem;
+  }
+
+  .hero__btn .content p:not(.buy_btn p){
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+      /* progress */
+      .progess{
+        flex-direction: column;
+
+        text-transform: uppercase;
+        max-width: 100%;
+      }
+
+      .about_progess{
+        width: 80%;
+        position: relative;
+      }
+
+      .about_progess p{
+        font-size: 1.5rem;
+        color: black;
+      }
+
+      .progess_image{
+        position: relative;
+        height: auto;
+        width: 600px;
+        max-width: 100%;
+      
+        margin-top: .55rem;
+      }
+
+      .progess_image img{
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        object-fit: cover;
+      }
+
+      .progess_image p{
+        color: black;
+        position: absolute;
+
+        font-size: 2rem;
+      }
+
+      .progess_image span{
+        color: black;
+        position: absolute;
+        right: 20%;
+
+        font-size: 1.25rem;
+      }
+
+
+
+  
+@media screen and (max-width: 580px) { 
+    /* hero */
+    .hero__btn .content{ 
+        padding: 0 .75rem; 
+    }
+
+    .hero__btn {
+        height:100px;
+    }
+
+
+    /* progess */
+    .hero__col { 
+        gap:2rem;
+    }
+
+    .about_progess p{
+        font-size: 1.2rem; 
+    }
+
+    .about_progess{
+        width: 100%; 
+      }
+
+    .progess_image p{ 
+        font-size: 1.5rem;
+      }
+    
+    .progess_image span{ 
+        font-size: 1rem;
+        right:13%;
+      }
+
 }
