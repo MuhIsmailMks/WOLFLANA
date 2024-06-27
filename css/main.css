@@ -28,6 +28,13 @@ ol,ul {
     src: url('../fonts/Talk_Comic.ttf') format(truetype)
 }
 
+@font-face {
+    font-family: "bardy";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Bardy.ttf') format(truetype)
+}
+
 
 blockquote,q {
     quotes: none
@@ -74,7 +81,7 @@ button {
 
 body {
     line-height: 1;
-    font-family: "talk_comic", sans-serif;
+    font-family: "bardy", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -616,7 +623,7 @@ picture{
 }
 
 .text_hero_main{
-    
+    -webkit-text-stroke:2px black;
 }
 
 @media screen and (max-width: 640px) {
@@ -1585,8 +1592,8 @@ picture{
 }
 
 .community__illustration {
-    max-width: 640px;
-    width: 100%;
+    max-width: 540px;
+    width: 50%;
     -o-object-fit: cover;
     object-fit: cover
 }
