@@ -642,6 +642,7 @@ picture{
 .text_hero_main{
     -webkit-text-stroke:4px black;
     letter-spacing:-4px;
+    transform:rotate(2deg);
 }
 
 @media screen and (max-width: 640px) {
