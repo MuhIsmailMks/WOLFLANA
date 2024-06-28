@@ -1571,7 +1571,7 @@ picture{
 
 .accordion_open .accordion__header {
     background: #437cbf;
-    border-color: #1b4373
+    border-color: #1b4373;
 }
 
 .accordion_open .accordion__icon {
@@ -2152,6 +2152,20 @@ picture{
         font-size: .75rem;
         right:13%;
       }
+
+      /* faq */
+      .faq{
+        padding:40px 0;
+      }
+      .accordion_open .accordion__body {
+        max-height: var(--body-height,600px)
+    }
+
+    .accordion_open p{
+        font-size:.7rem;
+    }
+
+    
 
       /* footer */
       .footer{
