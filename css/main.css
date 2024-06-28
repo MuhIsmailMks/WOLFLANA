@@ -1406,8 +1406,9 @@ picture{
     z-index: 2;
 
     height: 100%;
-    width: 40%;
-    background: inherit; 
+    width: 100%;
+    background: linear-gradient(269.05deg, rgba(255, 255, 255, 0) 21.09%, #866C56 129.61%);
+
   }
  
 
