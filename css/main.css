@@ -2003,6 +2003,12 @@ picture{
     cursor: pointer;
   }
 
+  .buy_btn img{
+    width:100px;
+    height:auto;
+    object-fit:contain;
+  }
+
   .buy_btn:hover{
     transform: scale(1.1);
   }
