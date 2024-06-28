@@ -1401,7 +1401,7 @@ picture{
     z-index: 2;
 
     height: 100%;
-    width: 35%;
+    width: 40%;
     background: inherit; 
   }
  
@@ -2117,6 +2117,20 @@ picture{
 
   
   
+@media screen and (min-width: 1500px) {
+    .faq::after{
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 0; 
+    
+        z-index: 2;
+    
+        height: 100%;
+        width: 43%;
+        background: inherit; 
+      }
+}
 @media screen and (max-width: 1080px) {
        /* hero */
        .text_hero_main{
