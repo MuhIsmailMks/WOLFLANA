@@ -313,9 +313,10 @@ picture{
 }
 
 .footer-illustration {
-    width: 100%;
+    width: 40%;
     padding: 0;
-    margin: 0
+    margin: 0 auto;
+    z-index:1;
 }
 
 @-webkit-keyframes underWater1 {
@@ -640,6 +641,7 @@ picture{
 
 .text_hero_main{
     -webkit-text-stroke:4px black;
+    letter-spacing:-4px;
 }
 
 @media screen and (max-width: 640px) {
@@ -1592,7 +1594,7 @@ picture{
 }
 
 .community {
-    padding: 160px 0 80px;
+    padding: 160px 0 30px;
     margin: -80px 0 0;
     /* background: #437cbf */
 }
@@ -2148,6 +2150,10 @@ picture{
       /* footer */
       .footer{
         height:1000px;
+      }
+
+      .footer-illustration{
+        width:90%;
       }
 }
 
