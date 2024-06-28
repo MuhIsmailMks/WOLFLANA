@@ -2137,6 +2137,13 @@ picture{
 
     .hero__btn {
         height:100px;
+        max-width:100%;
+        width:80%;
+    }
+
+    .hero__btn .bg_btn{
+        width:100%;
+        height:auto;
     }
 
     .hero__btn .content p:not(.buy_btn p){
