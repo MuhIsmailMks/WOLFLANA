@@ -2132,6 +2132,19 @@ picture{
         margin:50px 0 28vw;
     }
 }
+
+@media screen and (min-width: 1600px){
+    .footer{
+        margin:50px 0 450px;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .footer{
+        margin:50px 0 30vw;
+    }
+}
+
 @media screen and (min-width: 1500px) {
     .faq::after{
         content: "";
