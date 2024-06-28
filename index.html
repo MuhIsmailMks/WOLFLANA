@@ -23,7 +23,39 @@
   <body>
 
     <style>  
-    
+       .pepe{
+        position: absolute;
+        width: 13vw;
+        height: auto;
+
+        object-fit: contain;
+
+        right: 15%;
+        top: -2%;
+       }
+
+       .hero_ban{
+        position: absolute;
+        left: 13%;
+         bottom: 50px;
+
+         object-fit: contain;
+         width: 25vw;
+         max-width: 1500px;
+         height: auto;
+       }
+
+       @media screen and (max-width:500px) {
+        .pepe{
+          top:50px;
+          width: 40vw;
+        }
+
+        .hero_ban{
+          bottom: -5%;
+          width: 40vw;
+        }
+       }
     </style>
 
     <div class="wrapper">
@@ -79,7 +111,7 @@
             Browser Anda tidak mendukung video HTML5.
           </video> -->
   
-            
+            <img class="hero_ban layer-1 left_right_animation" src="img/purple_ban.png" alt="" />
 
 
           <img class="hero__pit layer-0" src="img/pit.svg" alt="" />
@@ -95,8 +127,8 @@
                   alt=""
                 />
               </div>
-              <p class="text_hero_main">WOLFLANA</p>
-              <!-- <img class="main" src="img/hero-title.png" alt="$WOLFLANA" /> -->
+              <!-- <p class="text_hero_main">WOLFLANA</p> -->
+              <img class="main" src="img/hero-title.png" alt="$WOLFLANA" />
             </div>
             <p class="hero__text">
               Hi, I’m $WOLFLANA, the beloved girlfriend of LandWolf.
@@ -150,10 +182,13 @@
             </div> -->
 
           </div>
+
         </div>
       </section>
       
       <div class="water">
+        <img class="pepe layer-3 wobble" src="img/pepe.png" alt="" />
+
         <img
             class="water__background layer-1"
             src="img/water.png"
@@ -182,7 +217,9 @@
           <img src="img/under-water-1.png" alt="" />
           <img src="img/under-water-2.png" alt="" />
         </div>
+
         <div id="about" class="story layer-2">
+        
           <div class="story__container container">
             <div class="story__inner">
               <div class="story__illustration">
@@ -201,6 +238,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <div class="find layer-3">
           <div class="find__container container">
@@ -650,7 +688,7 @@
               >
             </div>
             <div class="footer__bottom">
-              <div class="footer__left">
+              <div class="footerffffffffffffffffffffffff__left">
                 <div class="footer__logo logo">
                   <img
                     class="logo__icon"

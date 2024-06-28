@@ -187,7 +187,7 @@ picture{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    overflow: hidden
+    /* overflow: hidden */
 }
 
 .water__fishes {
@@ -199,7 +199,7 @@ picture{
 
 @media screen and (max-width: 640px) {
     .water {
-        padding:200px 0
+        padding:250px 0
     }
 
     .water__fishes {
@@ -230,7 +230,7 @@ picture{
 
 @media screen and (max-width: 500px) {
     .water__background {
-        top:60px
+        top:0px;
     }
 }
 
@@ -322,6 +322,10 @@ picture{
 
     right:-10vw;
     top:-5vw;
+}
+
+.footer .footer-illustration{
+    display:none
 }
 
 @-webkit-keyframes underWater1 {
@@ -1869,7 +1873,8 @@ picture{
     display: flex;
     gap: 48px;
     padding: 50px 0;
-    border-top: 2px solid #23364b
+    border-top: 2px solid #23364b;
+    position:relative;
 }
 
 
@@ -2206,6 +2211,7 @@ picture{
     /* progess */
     .hero__col { 
         gap:2rem;
+        padding:0 0 150px ;
     }
 
     .about_progess p{
@@ -2247,7 +2253,6 @@ picture{
       .footer{
         height:900px; 
             margin:50px 0 2vw; 
-        
       }
 
       .footer-illustration._1{
@@ -2258,6 +2263,11 @@ picture{
       .footer-illustration{
         width:50%; 
       }
+
+        .footer .footer-illustration{
+            display:block;
+            top:50px;
+        }
 }
 
 
@@ -2302,4 +2312,66 @@ picture{
       transform: translateX(0%);
     }
 }
-    
+
+
+.wobble{
+    animation: wobble 1s linear infinite;
+  }
+  
+  
+  @keyframes wobble {
+    0% {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
+    15% {
+      -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -5deg)
+    }
+    30% {
+      -webkit-transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      -ms-transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      transform: translate3d(2%, 0, 0) rotate3d(0, 0, 1, 3deg)
+    }
+    45% {
+      -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -3deg)
+    }
+    60% {
+      -webkit-transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      -ms-transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(3%, 0, 0) rotate3d(0, 0, 1, 2deg)
+    }
+    75% {
+      -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+    }
+    100% {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
+  }
+  
+
+
+  .left_right_animation{
+    animation: animated 30s linear infinite;
+  }
+  
+  @keyframes animated {
+    0%,50%,100%{
+      transform: translateX(0%);
+    }
+    20%{
+      transform: translateX(15%);
+    }
+    70%{
+      transform: translateX(-15%);
+    }
+  }
+  
