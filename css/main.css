@@ -1304,7 +1304,16 @@ picture{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+
+    height:auto;
+}
+ 
+
+.buy_cex2 a{
+    height:100px;
+    width:200px !important;
+    object-fit:contain
 }
 
 .buy__cex>div {
@@ -1874,7 +1883,8 @@ picture{
 }
 
 .footer__left {
-    width: 360px
+    width: 360px;
+    position:relative;
 }
 
 @media screen and (max-width: 1280px) {
@@ -2235,13 +2245,18 @@ picture{
 
       /* footer */
       .footer{
-        height:1000px; 
+        height:900px; 
             margin:50px 0 2vw; 
         
       }
 
-      .footer-illustration{
+      .footer-illustration._1{
         width:90%;
+        display:none;
+      }
+
+      .footer-illustration{
+        width:50%; 
       }
 }
 
