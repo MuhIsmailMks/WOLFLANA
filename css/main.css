@@ -313,10 +313,15 @@ picture{
 }
 
 .footer-illustration {
-    width: 20%;
+    width: 20vw;
+    max-width:300px;
     padding: 0;
     margin: 0 auto;
     z-index:1;
+    position:absolute;
+
+    right:-10vw;
+    top:-5vw;
 }
 
 @-webkit-keyframes underWater1 {
@@ -1613,6 +1618,10 @@ picture{
     /* background: #437cbf */
 }
 
+.community__col{
+    position:relative;
+}
+
 .community__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2241,6 +2250,22 @@ picture{
     }
     100% {
       transform: translatey(0%);
+    }
+}
+    
+.side_animation{
+    animation: side 2s ease-in-out infinite;
+  }
+  /* side */
+  @keyframes side {
+    0% {
+      transform: translateX(0%);
+    }
+    50% { 
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(0%);
     }
 }
     
