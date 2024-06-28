@@ -1312,13 +1312,21 @@ picture{
 
     height:auto;
 }
- 
 
+@media screen and (min-width:1200px) {
+    
 .buy_cex2 a{
-    height:100px;
-    width:200px !important;
-    object-fit:contain
+    height:95px;
+    width:280px !important;
 }
+.buy_cex2 a img{ 
+    height:100%;
+    width:auto;
+    object-fit:cover;
+}
+  
+}
+
 
 .buy__cex>div {
     display: -ms-grid;
@@ -2174,8 +2182,8 @@ picture{
     }
 
     .hero_ban{
-      bottom: -5%;
-      width: 40vw;
+      bottom: -8%;
+      width: 55vw;
     }
 
     .footer_bg{
