@@ -119,6 +119,6 @@ for (var i = 0; i < accordions.length; i++) {
         
         if (!isIE11()) {
             const player = document.getElementById('player');
-            player.src = supportsHEVCAlpha() ? '../img/footer_video.webm': '../img/footer_video.webm';
+            player.src = supportsHEVCAlpha() ? '../img/output.webm': '../img/output.webm';
             // player.src = supportsHEVCAlpha() ? 'https://doggo.s3.amazonaws.com/output.mov': 'https://doggo.s3.amazonaws.com/output.webm';
         } 
