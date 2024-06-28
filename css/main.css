@@ -2140,7 +2140,50 @@ picture{
     bottom: 0;
   }
 
-  
+  .pepe{
+    position: absolute;
+    width: 13vw;
+    height: auto;
+
+    object-fit: contain;
+
+    right: 15%;
+    top: -2%;
+   }
+
+   .hero_ban{
+    position: absolute;
+    left: 13%;
+     bottom: 50px;
+
+     object-fit: contain;
+     width: 25vw;
+     max-width: 1500px;
+     height: auto;
+   }
+
+   @media screen and (max-width:650px) {
+    .pepe{
+        top:50px; 
+      }
+   }
+
+   @media screen and (max-width:500px) {
+    .pepe{ 
+      width: 40vw;
+    }
+
+    .hero_ban{
+      bottom: -5%;
+      width: 40vw;
+    }
+
+    .footer_bg{
+      height: 36vw;
+      width: auto;
+      object-fit: cover;
+    }
+   }
   
 @media screen and (max-width: 1300px) {
     .footer{
@@ -2269,6 +2312,7 @@ picture{
             top:50px;
         }
 }
+
 
 
 
