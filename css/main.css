@@ -1391,6 +1391,19 @@ picture{
     position: relative; 
     background: #866C56;
 }
+
+.faq::after{
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0; 
+
+    z-index: 2;
+
+    height: 100%;
+    width: 35%;
+    background: inherit; 
+  }
  
 
 .faq__top {
@@ -1443,7 +1456,7 @@ picture{
 .faq__illustration {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0px;
     max-height: 600px;
     height: 100%;
     max-width: 100%;
@@ -2163,6 +2176,10 @@ picture{
 
     .accordion_open p{
         font-size:.7rem;
+    }
+
+    .faq::after{
+        display:none;
     }
 
     
