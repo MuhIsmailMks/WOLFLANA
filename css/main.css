@@ -1404,7 +1404,7 @@ picture{
 .faq__bottom {
     position: absolute;
     left: 0;
-    top: 99%;
+    top: 99.5%;
     width: 100%;
     display: block
 }
