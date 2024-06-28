@@ -1393,7 +1393,7 @@ picture{
 }
 
 .faq {
-    position: relative; 
+    position: relative;  
     background: #866C56;
 }
 
@@ -2127,6 +2127,11 @@ picture{
 
   
   
+@media screen and (max-width: 1300px) {
+    .footer{
+        margin:50px 0 28vw;
+    }
+}
 @media screen and (min-width: 1500px) {
     .faq::after{
         content: "";
