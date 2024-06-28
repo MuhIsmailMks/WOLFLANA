@@ -1957,8 +1957,8 @@ picture{
     cursor: pointer;
   }
 
-  .hero__btn:hover{
-    transform: scale(1.02);
+  .buy_btn:hover{
+    transform: scale(1.1);
   }
 
   .hero__btn .content{
@@ -1989,6 +1989,7 @@ picture{
 
   .hero__btn .buy_btn{
     position: relative;
+    transition: .1s ease-in;
   }
 
   .hero__btn .buy_btn img{
