@@ -2384,7 +2384,11 @@ picture{
     .bottom-illustration { 
         min-width: 400px; 
     }
-    
+
+    .bottom-illustration img{
+        object-fit:cover;
+    }
+
     /* progess */
     .hero__col { 
         gap:2rem;
