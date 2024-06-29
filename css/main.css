@@ -511,7 +511,7 @@ picture{
     /* background: -webkit-gradient(linear,left top,left bottom,from(#7390db),to(#d1e6fe)); */
     /* background: linear-gradient(180deg,#7390db 0,#d1e6fe 100%); */
     position: relative;
-    z-index:20;
+    z-index:20; 
 }
 
 .hero_video,
@@ -573,10 +573,10 @@ picture{
 
 .hero__pit {
     position: absolute;
-    bottom: 0;
-    -webkit-transform: translateY(100%);
+    top: 0vw;
+    /* -webkit-transform: translateY(100%);
     -ms-transform: translateY(100%);
-    transform: translateY(100%);
+    transform: translateY(100%); */
     width: 35vw;
     right: 60%
 }
@@ -592,13 +592,13 @@ picture{
 
 @media screen and (max-width: 1600px) {
     .hero__pit {
-        bottom:-5%
+        /* bottom:-5% */
     }
 }
 
 @media screen and (max-width: 640px) {
     .hero__pit {
-        bottom:-11%
+        /* bottom:-11% */
     }
 }
 
@@ -609,12 +609,11 @@ picture{
 }
 
 .hero__col {
-    max-width: 620px;
+
     width: 100%;
-    margin-left: auto;
-    padding: 100px 0; 
-    gap:1rem;
+    margin-left: auto;   
     min-height: 42vw;
+    height:100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -623,8 +622,9 @@ picture{
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    -ms-flex-pack: center; 
+    align-items:end;
+
 }
 
 @media screen and (max-width: 1023.98px) {
@@ -634,7 +634,7 @@ picture{
 }
 
 .hero__title {
-    width: 100%;
+    width: 40%;
     position: relative
 }
 
@@ -645,7 +645,7 @@ picture{
 .hero__title .decor {
     position: absolute;
     right: 42%;
-    top: -64%
+    top: -59%
 }
 
 .text_hero_main{
@@ -691,8 +691,7 @@ picture{
 .hero__text {
     font-size: 24px;
     line-height: 1.5;
-    text-align: center;
-    margin: 24px 0;
+    text-align: center; 
     text-shadow: #1a2e36 3px 0 0,#1a2e36 2.83487px .981584px 0,#1a2e36 2.35766px 1.85511px 0,#1a2e36 1.62091px 2.52441px 0,#1a2e36 .705713px 2.91581px 0,#1a2e36 -.287171px 2.98622px 0,#1a2e36 -1.24844px 2.72789px 0,#1a2e36 -2.07227px 2.16926px 0,#1a2e36 -2.66798px 1.37182px 0,#1a2e36 -2.96998px .42336px 0,#1a2e36 -2.94502px -.571704px 0,#1a2e36 -2.59586px -1.50383px 0,#1a2e36 -1.96093px -2.27041px 0,#1a2e36 -1.11013px -2.78704px 0,#1a2e36 -.137119px -2.99686px 0,#1a2e36 .850987px -2.87677px 0,#1a2e36 1.74541px -2.43999px 0,#1a2e36 2.44769px -1.73459px 0,#1a2e36 2.88051px -.838247px 0
 }
 
@@ -1990,12 +1989,10 @@ picture{
 
 /* hero */
 .hero__btn {
-    width: auto;
+    width: 400px;
     max-width: 90%;
-    height: 110px;
-    position: relative;
-  
-    margin: 0 auto;
+    height: 80px;
+    position: relative; 
 
     cursor: pointer;
     transition: .1s ease-in;
@@ -2004,15 +2001,13 @@ picture{
     justify-content: center;
     align-items: center;
 
-    border: none ;
+    
+    background:white;
+    border:2px solid black;
+    border-radius: 50px;
     cursor: pointer;
   }
-
-  .buy_btn img{
-    width:100px;
-    height:auto;
-    object-fit:contain;
-  }
+ 
 
   .buy_btn:hover{
     transform: scale(1.1);
@@ -2040,13 +2035,19 @@ picture{
   .hero__btn .content{
     height: 100%;
     width: 100%;
-    padding: 0 1.75rem;
+    padding: 0 .5rem;
     color: black;
   }
 
   .hero__btn .buy_btn{
     position: relative;
     transition: .1s ease-in;
+    width:100px; 
+    height:80%;
+    background:#FEC373;
+
+    border:3px solid black;
+    border-radius:50px;
   }
 
   .hero__btn .buy_btn img{
@@ -2057,8 +2058,7 @@ picture{
     font-size: 1.5rem;
     position: absolute;
     z-index: 1;
-
-    padding-bottom: 1rem;
+ 
   }
  
   .hero__btn .content p:not(.buy_btn p){
@@ -2161,19 +2161,19 @@ picture{
 
   .pepe{
     position: absolute;
-    width: 13vw;
+    width: 10vw;
     height: auto;
 
     object-fit: contain;
 
-    right: 15%;
-    top: -2%;
+    right: 17%;
+    top: 44%;
    }
 
    .hero_ban{
     position: absolute;
-    left: 13%;
-     bottom: 50px;
+    left: 0;
+     bottom: 120px;
 
      object-fit: contain;
      width: 25vw;
@@ -2278,7 +2278,8 @@ picture{
 
    @media screen and (max-width:500px) {
     .pepe{ 
-      width: 40vw;
+      width: 30vw;
+      top:57%;
     }
 
     .hero_ban{
@@ -2376,7 +2377,7 @@ picture{
     }
 
     .hero__btn {
-        height:100px;
+        height:70px;
         max-width:100%;
         width:80%;
     }

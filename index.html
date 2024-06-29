@@ -36,6 +36,25 @@
       transform: translateX(-50%) scaleX(-1); 
     }
 
+    .top_hero_container{
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bottom_hero_container{
+      width: 50%;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+
+      margin-top: 8rem;
+    }
+
     .input_container{
       display: flex;
       align-items: center;
@@ -54,6 +73,40 @@
       display: inline-block;  
             width: auto;
             min-width: 1ch;
+    }
+
+    @media screen and (min-width:1600px) {
+      .bottom_hero_container{
+        margin-top: 8vw;
+      }
+    }
+    @media screen and (min-width:2500px) {
+      .hero{
+        height: 50vw; 
+      }
+    }
+
+
+    @media screen and (max-width:1000px) {
+      .bottom_hero_container{
+        width: 100%; 
+      }
+
+      .bg_hero{
+        min-height: 750px;
+        height: 100vw;
+      }
+    }
+
+    
+    @media screen and (max-width:500px) {
+      .bg_hero{ 
+        height: 170vw;
+      }
+
+      .bottom_hero_container{
+        margin-top: 1rem;
+      }
     }
 
     </style>
@@ -102,57 +155,64 @@
 
 
 
-          <img class="hero__pit layer-0" src="img/pit.svg" alt="" />
+          
+
+          <img class="pepe layer-1 wobble" src="img/pepe.png" alt="" />
 
           <div class="hero__col layer-2">
 
-            <div class="hero__title">
-              <div class="decor">
-                <img class="decor__bag" src="img/money-bag.svg" alt="" />
-                <img
-                  class="decor__back"
-                  src="img/hero-title-decor.png"
-                  alt=""
-                />
+            <div class="top_hero_container">
+              <div class="hero__title">
+                <div class="decor">
+                  <img class="decor__bag" src="img/money-bag.svg" alt="" />
+                  <img
+                    class="decor__back"
+                    src="img/hero-title-decor.png"
+                    alt=""
+                  />
+                </div> 
+                <img class="main" src="img/hero-title.png" alt="$WOLFLANA" />
               </div>
-              <!-- <p class="text_hero_main">WOLFLANA</p> -->
-              <img class="main" src="img/hero-title.png" alt="$WOLFLANA" />
+              <p class="hero__text">
+                Hi, I’m $WOLFLANA, the beloved girlfriend of LandWolf.
+              </p>
             </div>
-            <p class="hero__text">
-              Hi, I’m $WOLFLANA, the beloved girlfriend of LandWolf.
-            </p>
 
-            <div class="hero__btn">
-                  <img src="./img/hero_btn.svg" class="bg_btn" alt="">
+            <div class="bottom_hero_container">
+              <div class="hero__btn">
+                <!-- <img src="./img/hero_btn.svg" class="bg_btn" alt=""> -->
 
-                  <div class="content">
-                    <div class="input_container">
-                      <input id="numberInput" type="text"  max="200" class="auto-width-input">
-                      <p class="suffix-text" id="suffixText">SOL</p>
-                    </div>
-                    <div class="buy_btn flex_center">
-                      <p>BUY</p> 
-                      <img src="./img/buy_hero_btn.png" alt="" class="bg_buy_btn">
-                    </div>
+                <div class="content">
+                  <div class="input_container">
+                    <input id="numberInput" type="text"  max="200" class="auto-width-input">
+                    <p class="suffix-text" id="suffixText">SOL</p>
                   </div>
+                  <div class="buy_btn flex_center">
+                    <p>BUY</p> 
+                    <!-- <img src="./img/buy_hero_btn.png" alt="" class="bg_buy_btn"> -->
+                  </div>
+                </div>
+          </div>
+
+          <div class="progess flex_center">
+
+            <div class="about_progess flex_between">
+              <p>min buy 0.1 sol</p>
+              <p>max buy 200 sol</p>
             </div>
 
-            <div class="progess flex_center">
+            <div class="progess_image flex_center">
+              <img src="./img/progess.svg" class="progess" alt="">
 
-              <div class="about_progess flex_between">
-                <p>min buy 0.1 sol</p>
-                <p>max buy 200 sol</p>
-              </div>
+              <p>presale progress</p>
+              <span>$792,413.36</span>
+            </div>
 
-              <div class="progess_image flex_center">
-                <img src="./img/progess.svg" class="progess" alt="">
+        </div> 
 
-                <p>presale progress</p>
-                <span>$792,413.36</span>
-              </div>
+            </div>
 
-          </div> 
-
+          
           </div>
 
       
@@ -163,7 +223,7 @@
       <img src="./img/bg_hero.jpg" alt="" class="bg_hero">
       
       <div class="water">
-        <img class="pepe layer-3 wobble" src="img/pepe.png" alt="" />
+        <img class="hero__pit layer-0" src="img/pit.svg" alt="" />
 
         <img
             class="water__background layer-1"
