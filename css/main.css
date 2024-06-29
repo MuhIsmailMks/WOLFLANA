@@ -2284,6 +2284,10 @@ picture{
       width: auto;
       object-fit: cover;
     }
+
+    .contract__value{
+        font-size:.5rem;
+    }
    }
   
 @media screen and (max-width: 1300px) {
