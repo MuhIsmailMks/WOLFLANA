@@ -23,7 +23,37 @@
   <body>
 
     <style>   
-    
+    .bg_hero{
+      width: auto;
+      height: 800px;
+
+      position: absolute;
+      z-index: 10 ;
+      object-fit: cover;
+
+      top: 0; 
+      left: 0;
+    }
+
+    .input_container{
+      display: flex;
+      align-items: center;
+    }
+
+    .hero__btn input{
+      width: 30%;
+      height: 100%;
+
+      border: none;
+      outline: none;
+ 
+
+      font-size: 2rem;
+
+      display: inline-block;  
+            width: auto;
+            min-width: 1ch;
+    }
 
     </style>
 
@@ -59,6 +89,7 @@
 
       <!-- home -->
       <section id="home" class="hero">
+        
         <div class="hero__container container layer-1">
           <canvas id="myCanvas" class="layer-1"></canvas
           >
@@ -94,7 +125,10 @@
                   <img src="./img/hero_btn.svg" class="bg_btn" alt="">
 
                   <div class="content">
-                    <p>0 SOL</p>
+                    <div class="input_container">
+                      <input id="numberInput" type="text"  max="200" class="auto-width-input">
+                      <p class="suffix-text" id="suffixText">SOL</p>
+                    </div>
                     <div class="buy_btn flex_center">
                       <p>BUY</p> 
                       <img src="./img/buy_hero_btn.png" alt="" class="bg_buy_btn">
@@ -105,14 +139,14 @@
             <div class="progess flex_center">
 
               <div class="about_progess flex_between">
-                <p>min buy 0.5 sol</p>
-                <p>max buy 50 sol</p>
+                <p>min buy 0.1 sol</p>
+                <p>max buy 200 sol</p>
               </div>
 
               <div class="progess_image flex_center">
                 <img src="./img/progess.svg" class="progess" alt="">
 
-                <p>progess</p>
+                <p>presale progess</p>
                 <span>$792,413.36</span>
               </div>
 
@@ -120,8 +154,12 @@
 
           </div>
 
+      
         </div>
+
       </section>
+
+      <img src="./img/bg_hero.jpg" alt="" class="bg_hero">
       
       <div class="water">
         <img class="pepe layer-3 wobble" src="img/pepe.png" alt="" />

@@ -88,42 +88,41 @@ for (var i = 0; i < accordions.length; i++) {
 
 
 
-// const videoElement = document.querySelector('.pictureContainer');
-// const fallbackImage = document.querySelector('.community__illustration');
+document.getElementById('numberInput').addEventListener('input', function (e) {
+    this.value = this.value.replace(/\D/g, '');
+});
 
-// videoElement.onerror = () => {
-//   videoElement.style.display = 'none';
-//   fallbackImage.style.display = 'block';
-// };
-
-
+document.querySelector('.hero__btn').addEventListener('click', function() {
+    document.getElementById('numberInput').focus();
+});
 
 
+const input = document.getElementById('numberInput');
+const suffixText = document.getElementById('suffixText');
 
+function adjustInputWidth() {
+    const context = document.createElement('canvas').getContext('2d');
+    context.font = getComputedStyle(input).font;
+    const text = input.value || input.placeholder || " ";
+    const width = context.measureText(text).width;
+
+    input.style.width = `${width + 4}px`; // 4px padding
+}
+
+input.addEventListener('input', adjustInputWidth); 
+adjustInputWidth();
+
+
+
+
+function validateAndAdjust() {
+    let value = input.value; 
+    value = value.replace(/[^0-9]/g, ''); 
+    if (value > 200) {
+        value = 200;
+    } 
+    input.value = value; 
+}
+
+input.addEventListener('input', validateAndAdjust);
  
- 
-
-
-        //  // HEVC with alpha is supported ONLY on Safari >=13 / ios >=13
-        //  // previous versions also supported HEVC but WITHOUT alpha channel (video will play with black bg)
-        //  // Safari 13 is the first version to support mediaCapabilities
-        //  function supportsHEVCAlpha() {
-        //     const navigator = window.navigator;
-        //     const ua = navigator.userAgent.toLowerCase()
-        //     const hasMediaCapabilities = !!(navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo)
-        //     const isSafari = ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1)))
-        
-        //     return isSafari && hasMediaCapabilities
-        // }
-        
-        // function isIE11() {
-        //     return !!window.navigator.userAgent.match(/Trident\/7\./,[]);
-        // }
-        
-        // if (!isIE11()) {
-        //     const player = document.getElementById('player');
-        //     player.src = supportsHEVCAlpha() ? '../img/output.webp': '../img/output.webm';
-        // } 
-
-        
-            // player.src = supportsHEVCAlpha() ? 'https://doggo.s3.amazonaws.com/output.mov': 'https://doggo.s3.amazonaws.com/output.webm';
