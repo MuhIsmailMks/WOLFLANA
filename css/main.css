@@ -2278,8 +2278,8 @@ picture{
 
    @media screen and (max-width:500px) {
     .pepe{ 
-      width: 30vw;
-      top:57%;
+      width: 25vw;
+      top:59%;
     }
 
     .hero_ban{
@@ -2426,7 +2426,7 @@ picture{
       }
 
     .progess_image p{ 
-        font-size: 1.15rem;
+        font-size: .9rem;
       }
     
     .progess_image span{ 
