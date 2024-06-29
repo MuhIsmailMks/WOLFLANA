@@ -2342,6 +2342,10 @@ picture{
 @media screen and (min-width: 1900px){
 
     /* hero */
+    .top_hero_container{
+        padding-top:50px;
+    }
+
     .hero_ban{
         width:18vw; 
         left:20%;
