@@ -2545,13 +2545,7 @@
         loop: !0,
         canvas: document.querySelector(".community__illustration"),
         src: "/animations/4.json"
-    }),
-    new y({
-        autoplay: !0,
-        loop: !0,
-        canvas: document.querySelector(".bottom-illustration canvas"),
-        src: "/animations/5.json"
-    }),
+    }), 
     document.querySelectorAll('a[href^="#"]').forEach((t=>{
         try {
             const e = new URL(t.href).hash;
