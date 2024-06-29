@@ -88,32 +88,20 @@ for (var i = 0; i < accordions.length; i++) {
 
 
 
+// const videoElement = document.querySelector('.pictureContainer');
+// const fallbackImage = document.querySelector('.community__illustration');
+
+// videoElement.onerror = () => {
+//   videoElement.style.display = 'none';
+//   fallbackImage.style.display = 'block';
+// };
 
 
 
 
 
-
-
-
-function supportsWebP(callback) {
-    var webP = new Image();
-    webP.onload = webP.onerror = function() {
-      callback(webP.height == 2);
-    };
-    webP.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4TAYAAAAvAAAAHEcGAnEw==';
-  }
-
-  supportsWebP(function(supported) {
-    if (supported) {
-      var source = document.createElement('source');
-      source.srcset = './img/ezgif-1-589dfedd09.webp';
-      source.type = 'image/webp';
-      document.getElementById('pictureContainer').insertBefore(source, document.getElementById('fallbackImg'));
-    }
-  });
-
-
+ 
+ 
 
 
         //  // HEVC with alpha is supported ONLY on Safari >=13 / ios >=13
