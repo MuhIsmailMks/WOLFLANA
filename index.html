@@ -23,6 +23,8 @@
   <body>
 
     <style>   
+    
+
     </style>
 
     <div class="wrapper">
@@ -318,7 +320,9 @@
       >
         <div class="bottom-illustration">
           <canvas width="400" height="400"></canvas
-          ><img src="img/bottom-illustration.png" alt="" />
+          >
+          <dotlottie-player src="https://lottie.host/abc14d80-86e1-479e-a964-de74462ea16c/dwEOVLfpLK.json" background="transparent" class="bottom_illustration_pepe" speed="1"   loop autoplay></dotlottie-player>
+          <img src="img/bottom-illustration.png" alt="" />
         </div>
 
         <!-- how to -->
@@ -541,23 +545,21 @@
                 </li>
               </ul>
             </div>
+
             <img
                 class="faq__illustration"
-                src="img/faq-illustration.jpg"
+                src="img/faq-illustration.png"
                 alt=""
-            />
-            <picture
-              >
-              <source
-                class="faq__illustration"
-                srcset="/img/faq-illustration.webp"
-                type="image/webp" />
-              <img
-                class="faq__illustration"
-                src="img/faq-illustration.jpg"
-                alt=""
-            />
-          </picture>
+            /> 
+
+            <div class="miner_container">
+              <div>
+                <img src="./img/purple_miners1.png" alt="" class="wobble" style="animation-duration: 3s;">
+              </div>
+              <div>
+                <img src="./img/purple_miners2.png" alt="" class="miner2_animation"  >
+              </div>
+            </div>
 
           </div>
           <img class="faq__bottom" src="img/faq-bottom.svg" alt="" />
@@ -612,8 +614,6 @@
         <!-- background community and footer -->
         <img src="./img/forest.svg" alt="" class="footer_bg">
         <div class="bg_footer_community"></div>
-      
-        
 
         <footer class="footer ">
           <div class="footer__container container">
@@ -702,13 +702,17 @@
           </div>
         </footer>
 
-        <dotlottie-player src="https://lottie.host/61d88898-c250-43a3-9f1e-74899b6bd1d3/O3gBivxxUk.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+
+        <!-- lottie animation -->
+
+        <dotlottie-player src="https://lottie.host/61d88898-c250-43a3-9f1e-74899b6bd1d3/O3gBivxxUk.json" background="transparent" class="lottie_animation" speed="1" loop autoplay></dotlottie-player>
 
       </div>
+
     </div>
 
     
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <script src="./js/script.js"></script>
     <script src="./js/main.js"></script>
     <script src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/js.js"></script>

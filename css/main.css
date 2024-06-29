@@ -1414,7 +1414,7 @@ picture{
 }
 
 .faq {
-    position: relative;  
+    position: relative;   
     background: #866C56;
 }
 
@@ -1481,9 +1481,10 @@ picture{
 }
 
 .faq__illustration {
-    position: absolute;
-    bottom: 0;
+    position: absolute; 
     right: 0px;
+    top:50%;
+    transform: translateY(-50%);
     max-height: 600px;
     height: 100%;
     max-width: 100%;
@@ -2212,23 +2213,20 @@ picture{
 }
 
 @media screen and (min-width: 1900px){
+    .bottom_illustration_pepe{ 
+        width: 30vw; 
+      }
+
     .footer{
         margin:50px 0 30vw;
     }
+
+    
 }
 
 @media screen and (min-width: 1500px) {
-    .faq::after{
-        content: "";
-        position: absolute;
-        left: -10px;
-        top: 0; 
-    
-        z-index: 2;
-    
-        height: 100%;
-        width: 48%;
-        background: inherit; 
+    .faq::after{ 
+        width: 98%; 
       }
 }
 @media screen and (max-width: 1080px) {
@@ -2328,7 +2326,99 @@ picture{
 }
 
 
+.lottie_animation{ 
+    z-index: 10;
 
+    width: 50%;
+    height: auto;
+  }
+
+  .miner_container{
+    height: 600px;
+    width: 100%;
+    position: absolute;
+
+    left: 0;
+      top:50%;
+      transform: translateY(-50%);
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: end;
+  }
+
+  .miner_container div{
+    height: 50%;
+    position: relative;  
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .miner_container div:nth-child(1){
+    width: 760px;
+  }
+
+  .miner_container div:nth-child(2){
+    width: 520px;
+  }
+
+  .miner_container div img{
+    height: 80%;
+    width: auto;
+    position: relative;
+  }
+
+
+  /* miner2_animation */
+  .miner2_animation{
+    animation: miner2_animation 10s ease-in-out infinite;
+  }
+
+  .bottom_illustration_pepe{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+    width: 40vw;
+    height: auto;
+  }
+
+  @keyframes miner2_animation {
+    0% {
+      transform: translateX(0%) scale(1);
+    } 
+    100% {
+      transform: translateX(-150%) scale(0.7);
+      
+    }
+}
+
+
+  @media screen and (max-width:900px) {
+
+  }
+  @media screen and (max-width:900px) {
+    .miner_container{
+      height: 70vw;
+    }
+
+    .miner_container div:nth-child(1){
+      width: 80%;
+      align-items: end;
+    }
+
+    .miner_container div:nth-child(2){
+      width: 60%;
+    }
+
+    .bottom_illustration_pepe{
+      width: 100vw;
+    }
+  }
 
 
 
