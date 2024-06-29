@@ -381,7 +381,7 @@ picture{
     left: 0;
     top: 0;
     width: 100%;
-    padding: 40px 0
+    padding: 20px 0;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -743,6 +743,10 @@ picture{
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
+}
+
+.story{
+    z-index:22;
 }
 
 .story__inner {
