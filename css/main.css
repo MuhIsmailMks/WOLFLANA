@@ -2352,6 +2352,10 @@ picture{
     
   }
 
+  
+  .mobile_bottom{
+    display:none;
+}
 
 @media screen and (max-width: 580px) { 
     /* hero */
@@ -2383,6 +2387,14 @@ picture{
     
     .bottom-illustration { 
         min-width: 400px; 
+    }
+
+    .bottom-illustration .mobile_bottom{
+        display:block; 
+        position:absolute !important;
+
+        left:0;
+        bottom:0;
     }
 
     .bottom-illustration img{
