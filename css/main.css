@@ -280,8 +280,7 @@ picture{
 
 .bottom-illustration img {
     width: 100%;
-    position: relative;
-    z-index: 6
+    position: relative; 
 }
 
 .bottom-illustration canvas {
@@ -2381,8 +2380,9 @@ picture{
   .bottom_illustration_pepe{
     position: absolute;
     bottom: 0;
-    right: 10%;
-
+    left: 50%;
+    transform:translateX(-50%);
+    
     width: 40vw;
     height: auto;
   }
@@ -2415,9 +2415,15 @@ picture{
       width: 60%;
     }
 
-    .bottom_illustration_pepe{
-      width: 100vw;
+    .bottom-illustration { 
+        min-width: 600px; 
     }
+
+    .bottom_illustration_pepe{
+      width: 60vw; 
+    }
+
+    
   }
 
 
