@@ -96,29 +96,46 @@ for (var i = 0; i < accordions.length; i++) {
 
 
 
+function supportsWebP(callback) {
+    var webP = new Image();
+    webP.onload = webP.onerror = function() {
+      callback(webP.height == 2);
+    };
+    webP.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4TAYAAAAvAAAAHEcGAnEw==';
+  }
+
+  supportsWebP(function(supported) {
+    if (supported) {
+      var source = document.createElement('source');
+      source.srcset = './img/ezgif-1-589dfedd09.webp';
+      source.type = 'image/webp';
+      document.getElementById('pictureContainer').insertBefore(source, document.getElementById('fallbackImg'));
+    }
+  });
 
 
 
 
-
-         // HEVC with alpha is supported ONLY on Safari >=13 / ios >=13
-         // previous versions also supported HEVC but WITHOUT alpha channel (video will play with black bg)
-         // Safari 13 is the first version to support mediaCapabilities
-         function supportsHEVCAlpha() {
-            const navigator = window.navigator;
-            const ua = navigator.userAgent.toLowerCase()
-            const hasMediaCapabilities = !!(navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo)
-            const isSafari = ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1)))
+        //  // HEVC with alpha is supported ONLY on Safari >=13 / ios >=13
+        //  // previous versions also supported HEVC but WITHOUT alpha channel (video will play with black bg)
+        //  // Safari 13 is the first version to support mediaCapabilities
+        //  function supportsHEVCAlpha() {
+        //     const navigator = window.navigator;
+        //     const ua = navigator.userAgent.toLowerCase()
+        //     const hasMediaCapabilities = !!(navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo)
+        //     const isSafari = ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1)))
         
-            return isSafari && hasMediaCapabilities
-        }
+        //     return isSafari && hasMediaCapabilities
+        // }
         
-        function isIE11() {
-            return !!window.navigator.userAgent.match(/Trident\/7\./,[]);
-        }
+        // function isIE11() {
+        //     return !!window.navigator.userAgent.match(/Trident\/7\./,[]);
+        // }
         
-        if (!isIE11()) {
-            const player = document.getElementById('player');
-            player.src = supportsHEVCAlpha() ? '../img/output.webm': '../img/output.webm';
+        // if (!isIE11()) {
+        //     const player = document.getElementById('player');
+        //     player.src = supportsHEVCAlpha() ? '../img/output.webp': '../img/output.webm';
+        // } 
+
+        
             // player.src = supportsHEVCAlpha() ? 'https://doggo.s3.amazonaws.com/output.mov': 'https://doggo.s3.amazonaws.com/output.webm';
-        } 
