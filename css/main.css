@@ -491,11 +491,12 @@ picture{
 
 @media screen and (max-width: 500px) {
     .footer__btn,.header__btn {
-        padding:10px 16px
+        padding:10px;
+        font-size:3vw;
     }
 
     .footer__btn img,.header__btn img {
-        width: 18px
+        width: 18px;
     }
 
     .logo {
@@ -2414,8 +2415,12 @@ picture{
   .mobile_bottom{
     display:none;
 }
+ 
+@media screen and (max-width: 580px) {
+    .header__container{
+        padding:0 1rem;
+    } 
 
-@media screen and (max-width: 580px) { 
     /* hero */
     .text_hero_main{
         font-size:56px;
@@ -2467,21 +2472,20 @@ picture{
 
    
     .about_progess p{
-        font-size: 1rem; 
-
+        font-size: 3.5vw;
     }
 
     .about_progess{
         width: 90%; 
       }
-
+ 
     .progess_image p{ 
-        font-size: .9rem;
+        font-size: 3vw;
       }
     
     .progess_image span{ 
-        font-size: .75rem;
-        right:5%;
+        font-size: .65rem;
+        right:10%;
       }
 
       /* faq */
