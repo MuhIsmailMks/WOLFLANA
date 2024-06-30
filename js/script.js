@@ -149,6 +149,11 @@ function validateAndAdjust() {
         return;
     }
 
+    // Mencegah input "0.0" atau "00.0"
+    if (value === '0.0') {
+        value = '0.1';
+    }
+
     // Konversi ke angka dan batasi maksimum
     const numericValue = parseFloat(value);
     if (numericValue > 200) {
