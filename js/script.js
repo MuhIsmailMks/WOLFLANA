@@ -89,7 +89,7 @@ for (var i = 0; i < accordions.length; i++) {
 
 
 document.getElementById('numberInput').addEventListener('input', function (e) {
-    this.value = this.value.replace(/\D/g, '');
+    this.value = this.value.replace(/[^0-9.]/g, '');
 });
 
 document.querySelector('.hero__btn').addEventListener('click', function() {
@@ -106,14 +106,12 @@ function adjustInputWidth() {
     const text = input.value || input.placeholder || " ";
     const width = context.measureText(text).width;
 
-    input.style.width = `${width + 4}px`; // 4px padding
+    input.style.width = `${width + 10}px`; // 4px padding
 }
 
 input.addEventListener('input', adjustInputWidth); 
 adjustInputWidth();
-
-
-
+ 
 
 function validateAndAdjust() {
     let value = input.value;
@@ -133,8 +131,14 @@ function validateAndAdjust() {
     }
 
     // Hapus nol berlebih di depan kecuali sebelum titik desimal
-    if (!value.startsWith('0.')) {
+    if (!value.startsWith('0.1')) {
         value = value.replace(/^0+/, '');
+    }
+
+    // Batasi hanya satu digit setelah titik desimal
+    if (parts.length > 1 && parts[1].length > 1) {
+        parts[1] = parts[1].charAt(0); // Hanya ambil digit pertama setelah titik desimal
+        value = parts.join('.');
     }
 
     // Jika ada titik di akhir, biarkan pengguna mengedit lebih lanjut

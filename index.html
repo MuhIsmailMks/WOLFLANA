@@ -80,24 +80,13 @@
         margin-top: 13vw;
       }
     }
-    
+     
 
-    /* @media screen and (min-width:1600px) {
-      .bottom_hero_container{
-        margin-top: 8vw;
-      }
-    } */
-
-    @media screen and (min-width:2000px) {
-      .hero{
-        /* height: 50vw;  */
-      }
-
+    @media screen and (min-width:2000px) { 
       .bottom_hero_container{
         margin-top: 12vw;
       }
     }
-
 
     @media screen and (max-width:1000px) {
       .bottom_hero_container{
@@ -200,7 +189,8 @@
 
                 <div class="content">
                   <div class="input_container">
-                    <input id="numberInput" type="text"  max="200" class="auto-width-input">
+                    <input id="numberInput"  class="auto-width-input" type="text"  >
+                    <!-- <input id="numberInput"  class="auto-width-input" type="number" step="1" min="0.5" value="1" max="200"> -->
                     <p class="suffix-text" id="suffixText">SOL</p>
                   </div>
                   <div class="buy_btn flex_center">
@@ -771,7 +761,7 @@
 
     
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-    <script src="./js/main.js"></script> 
     <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script> 
   </body> 
 </html>
