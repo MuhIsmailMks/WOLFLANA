@@ -129,16 +129,18 @@ function validateAndAdjust() {
     if (parts.length > 2) {
         value = parts[0] + '.' + parts.slice(1).join('');
     }
-
-    // Hapus nol berlebih di depan kecuali sebelum titik desimal
-    if (!value.startsWith('0.1')) {
-        value = value.replace(/^0+/, '');
-    }
+ 
 
     // Batasi hanya satu digit setelah titik desimal
     if (parts.length > 1 && parts[1].length > 1) {
         parts[1] = parts[1].charAt(0); // Hanya ambil digit pertama setelah titik desimal
         value = parts.join('.');
+    }
+
+      // Batasi nol di awal menjadi maksimal dua
+      if (value.startsWith('0')) {
+        // Jika titik desimal diikuti oleh lebih dari dua nol
+        value = value.replace(/^0+/, '0');
     }
 
     // Jika ada titik di akhir, biarkan pengguna mengedit lebih lanjut
