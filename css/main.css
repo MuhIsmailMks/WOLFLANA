@@ -1772,7 +1772,7 @@ picture{
 }
 
 .footer{
-    margin:50px 0 23vw;
+    margin:50px 0 12vw;
 }
 
 .footer__top {
@@ -2171,13 +2171,13 @@ picture{
 
   .pepe{
     position: absolute;
-    width: 10vw;
+    width: 7vw;
     height: auto;
 
     object-fit: contain;
 
-    right: 17%;
-    top: 44%;
+    right: 22%;
+    top: 48%;
    }
 
    .hero_ban{
@@ -2342,13 +2342,13 @@ picture{
   
 @media screen and (max-width: 1300px) {
     .footer{
-        margin:50px 0 35vw;
+        margin:50px 0 5vw;
     }
 }
 
 @media screen and (min-width: 1600px){
     .footer{
-        margin:50px 0 500px;
+        margin:50px 0 210px;
     }
 }
 
@@ -2374,7 +2374,7 @@ picture{
       }
 
     .footer{
-        margin:50px 0 30vw;
+        margin:50px 0 10vw;
     }
 
     
@@ -2507,7 +2507,7 @@ picture{
       /* footer */
       .footer{
         height:900px; 
-        margin:50px 0 20vw; 
+        margin:50px 0 5vw; 
       }
 
       .footer-illustration._1{
