@@ -2087,7 +2087,7 @@ picture{
         flex-direction: column;
 
         text-transform: uppercase;
-        max-width: 100%;
+        max-width: 90%;
       }
 
       .about_progess{
@@ -2325,8 +2325,8 @@ picture{
     }
 
     .hero_ban{
-      bottom: -8%;
-      width: 55vw;
+      bottom: 19%;
+      width: 40vw;
     }
  
 
@@ -2461,8 +2461,8 @@ picture{
 
     /* progess */
     .hero__col { 
-        gap:2rem;
-        padding:0 0 150px ;
+        gap:60vw;
+        /* padding:0 0 150px ;  */
     }
 
    
