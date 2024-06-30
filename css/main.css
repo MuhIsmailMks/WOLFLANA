@@ -499,6 +499,10 @@ picture{
         width: 18px;
     }
 
+      .header__btn::after {
+        content: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 32 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4H23C25.7614 4 28 6.23858 28 9V17' stroke='%23B09D89' stroke-width='11' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    }
+
     .logo {
         gap: 8px;
         font-size: 20px
