@@ -116,13 +116,40 @@ adjustInputWidth();
 
 
 function validateAndAdjust() {
-    let value = input.value; 
-    value = value.replace(/[^0-9]/g, ''); 
-    if (value > 200) {
-        value = 200;
-    } 
-    input.value = value; 
+    let value = input.value;
+
+    // Izinkan hanya angka dan titik desimal
+    value = value.replace(/[^0-9.]/g, '');
+
+    // Jika titik berada di awal, tambahkan 0 di depannya
+    if (value.startsWith('.')) {
+        value = '0' + value;
+    }
+
+    // Jika lebih dari satu titik desimal, hapus yang ekstra
+    const parts = value.split('.');
+    if (parts.length > 2) {
+        value = parts[0] + '.' + parts.slice(1).join('');
+    }
+
+    // Hapus nol berlebih di depan kecuali sebelum titik desimal
+    if (!value.startsWith('0.')) {
+        value = value.replace(/^0+/, '');
+    }
+
+    // Jika ada titik di akhir, biarkan pengguna mengedit lebih lanjut
+    if (value.endsWith('.')) {
+        input.value = value;
+        return;
+    }
+
+    // Konversi ke angka dan batasi maksimum
+    const numericValue = parseFloat(value);
+    if (numericValue > 200) {
+        value = '200';
+    }
+
+    input.value = value;
 }
 
 input.addEventListener('input', validateAndAdjust);
- 
