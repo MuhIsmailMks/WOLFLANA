@@ -143,6 +143,12 @@ function validateAndAdjust() {
         value = value.replace(/^0+/, '0');
     }
 
+
+    if (/^0[1-9]$/.test(value)) {
+        value = '0.' + value.charAt(1);
+    }
+    
+
     // Jika ada titik di akhir, biarkan pengguna mengedit lebih lanjut
     if (value.endsWith('.')) {
         input.value = value;
