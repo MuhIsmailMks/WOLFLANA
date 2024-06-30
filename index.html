@@ -22,98 +22,10 @@
   </head>
   <body>
 
-    <style>    
-    .bg_hero{
-      width: auto;
-      height: 50vw; 
-
-      position: absolute;
-      z-index: 10 ;
-      object-fit: cover;
-
-      top: 0; 
-      left: 50%;
-      transform: translateX(-50%) scaleX(-1); 
-    }
-
-    .top_hero_container{
-      width: 100%;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .bottom_hero_container{
-      width: 50%;
-    
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-
-      margin-top: 8rem;
-    }
-
-    .input_container{
-      display: flex;
-      align-items: center;
-    }
-
-    .hero__btn input{
-      width: 30%;
-      height: 100%;
-
-      border: none;
-      outline: none;
+    <style>     
  
 
-      font-size: 2rem;
-
-      display: inline-block;  
-            width: auto;
-            min-width: 1ch;
-    }
-
-    @media screen and (min-width:1600px) {
-      .bottom_hero_container{
-        margin-top: 13vw;
-      }
-    }
      
-
-    @media screen and (min-width:2000px) { 
-      .bottom_hero_container{
-        margin-top: 12vw;
-      }
-    }
-
-    @media screen and (max-width:1000px) {
-      .bottom_hero_container{
-        width: 100%; 
-      }
-
-      .pepe{
-        /* top: 80%; */
-      }
-
-      .bg_hero{
-        min-height: 750px;
-        height: 100vw;
-      }
-    }
-
-    
-    @media screen and (max-width:500px) {
-      .bg_hero{ 
-        height: 170vw;
-      }
-
-      .bottom_hero_container{
-        margin-top: 1rem;
-      }
-    }
-
     </style>
 
     <div class="wrapper">
@@ -380,7 +292,7 @@
         <div class="bottom-illustration"> 
           <dotlottie-player src="https://lottie.host/abc14d80-86e1-479e-a964-de74462ea16c/dwEOVLfpLK.json" background="transparent" class="bottom_illustration_pepe" speed="1"   loop autoplay></dotlottie-player>
           <img src="./img/bottom-illustration.png" alt="" />
-          <img src="./img/bottom-illustration.png" alt="" class="mobile_bottom"/>
+          <img src="./img/bottom-illustration_mobile.png" loading="lazy" alt="" class="mobile_bottom"/>
         </div>
 
         <!-- how to -->
