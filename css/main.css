@@ -2084,7 +2084,7 @@ picture{
     position: absolute;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
 
@@ -2536,6 +2536,10 @@ picture{
         width:100%;
         height:auto;
     }
+
+    .hero__btn .content{ 
+        justify-content: center; 
+      }
 
     .hero__btn .content p:not(.buy_btn p){
         font-size:1.85rem;
