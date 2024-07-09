@@ -1,17 +1,22 @@
 <svg width="555" height="43" viewBox="0 0 555 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_793_8)">
-<rect width="555" height="43" rx="21.5" fill="white"/>
-<rect x="-5" width="497" height="43" fill="#7EEAF6"/>
-<ellipse cx="47.5" cy="4" rx="17.5" ry="15" fill="#BEF3F5"/>
-<ellipse cx="123" cy="29" rx="13" ry="10" fill="#BEF3F5"/>
-<ellipse cx="339.5" cy="15" rx="4.5" ry="3" fill="#BEF3F5"/>
-<ellipse cx="243.5" cy="32.5" rx="10.5" ry="6.5" fill="#BEF3F5"/>
-<ellipse cx="186" cy="11" rx="15" ry="6" fill="#BEF3F5"/>
+<g clip-path="url(#clip0_570_8)">
+<mask id="mask0_570_8" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="555" height="43">
+<path d="M533.5 0H21.5C9.62588 0 0 9.62588 0 21.5C0 33.3741 9.62588 43 21.5 43H533.5C545.374 43 555 33.3741 555 21.5C555 9.62588 545.374 0 533.5 0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_570_8)">
+<path d="M533.5 0H21.5C9.62588 0 0 9.62588 0 21.5C0 33.3741 9.62588 43 21.5 43H533.5C545.374 43 555 33.3741 555 21.5C555 9.62588 545.374 0 533.5 0Z" fill="white"/>
+<path d="M553 0H-5V43H553V0Z" fill="#7EEAF6"/>
+<path d="M47.5 19C57.165 19 65 12.2843 65 4C65 -4.28427 57.165 -11 47.5 -11C37.835 -11 30 -4.28427 30 4C30 12.2843 37.835 19 47.5 19Z" fill="#BEF3F5"/>
+<path d="M123 39C130.18 39 136 34.5228 136 29C136 23.4772 130.18 19 123 19C115.82 19 110 23.4772 110 29C110 34.5228 115.82 39 123 39Z" fill="#BEF3F5"/>
+<path d="M339.5 18C341.985 18 344 16.6569 344 15C344 13.3431 341.985 12 339.5 12C337.015 12 335 13.3431 335 15C335 16.6569 337.015 18 339.5 18Z" fill="#BEF3F5"/>
+<path d="M243.5 39C249.299 39 254 36.0899 254 32.5C254 28.9101 249.299 26 243.5 26C237.701 26 233 28.9101 233 32.5C233 36.0899 237.701 39 243.5 39Z" fill="#BEF3F5"/>
+<path d="M186 17C194.284 17 201 14.3137 201 11C201 7.68629 194.284 5 186 5C177.716 5 171 7.68629 171 11C171 14.3137 177.716 17 186 17Z" fill="#BEF3F5"/>
 </g>
-<rect x="2" y="2" width="551" height="39" rx="19.5" stroke="#21395B" stroke-width="4"/>
+<path d="M533.5 2H21.5C10.7304 2 2 10.7304 2 21.5C2 32.2696 10.7304 41 21.5 41H533.5C544.27 41 553 32.2696 553 21.5C553 10.7304 544.27 2 533.5 2Z" stroke="#21395B" stroke-width="4"/>
+</g>
 <defs>
-<clipPath id="clip0_793_8">
-<rect width="555" height="43" rx="21.5" fill="white"/>
+<clipPath id="clip0_570_8">
+<rect width="555" height="43" fill="white"/>
 </clipPath>
 </defs>
 </svg>

@@ -199,6 +199,10 @@ picture{
     margin-top: 8rem;
   }
 
+  .buy_btn_hero{
+    font-size:10px;
+  }
+
   .input_container{
     display: flex;
     align-items: center;
@@ -636,10 +640,7 @@ picture{
 
 .hero__pit {
     position: absolute;
-    top: 0vw;
-    /* -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%); */
+    top: 0vw; 
     width: 35vw;
     right: 60%
 }
@@ -2052,9 +2053,9 @@ picture{
 
 /* hero */
 .hero__btn {
-    width: 400px;
+    width: 550px;
     max-width: 90%;
-    height: 80px;
+    height: 70px;
     position: relative; 
 
     cursor: pointer;
@@ -2065,10 +2066,10 @@ picture{
     align-items: center;
 
     
-    background:white;
+    /* background:white;
     border:2px solid black;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: pointer; */
   }
  
 
@@ -2083,7 +2084,7 @@ picture{
     position: absolute;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -2105,12 +2106,13 @@ picture{
   .hero__btn .buy_btn{
     position: relative;
     transition: .1s ease-in;
-    width:100px; 
-    height:80%;
+    width:170px; 
+    height:90%;
     background:#FEC373;
 
     border:3px solid black;
     border-radius:50px;
+    box-shadow: 0px 1px 13.3px -2px #000000c4; 
   }
 
   .hero__btn .buy_btn img{
@@ -2118,7 +2120,7 @@ picture{
   }
 
   .buy_btn p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: absolute;
     z-index: 1;
  
@@ -2525,7 +2527,7 @@ picture{
     }
 
     .hero__btn {
-        height:70px;
+        height:50px;
         max-width:100%;
         width:80%;
     }
@@ -2537,6 +2539,10 @@ picture{
 
     .hero__btn .content p:not(.buy_btn p){
         font-size:1.85rem;
+    }
+
+    .buy_btn{
+        box-shadow: 0px 1px 7.3px -2px #000000c4; 
     }
 
 
